@@ -16,19 +16,18 @@
 <body>
     <h1>Iniciando estudos com <strong>DOM</strong></h1>
     <p>Aqui vai o resultado</p>
-    <div>Clique em mim</div>
-    <style>
-        
-    </style>
-
-    <h1>Iniciando estudos com <strong>DOM</strong></h1>
-    <p>Aqui vai o resultado</p>
-    <div class="msg">Clique em mim</div>
+    <div id="msg">Clique em mim</div>
     <script>
-        var corpo2 = window.document.body
-        var p2 = window.document.getElementsByTagName('p')[2]
-        var d2 = window.document.querySelector('div.msg')
-        d2.style.background = 'blue'
+        var p1 = window.document.getElementsByTagName('p') [1]
+        var corpo = window.document.body
+        /*
+        var d = window.document.getElementById('msg')
+        p1.style.color = 'blue'
+        d.style.background = 'green'
+        d.innerText = 'Estou aguardando...'
+        */
+       var d = window.document.getElementsByName('msg')[0]
+       d.innerText = ('Olá')
     </script>
 </body>
 </html>
