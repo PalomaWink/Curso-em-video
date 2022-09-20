@@ -17,8 +17,10 @@
     <h1>Iniciando estudos com <strong>DOM</strong></h1>
     <p>Aqui vai o resultado</p>
     <div>Clique em mim</div>
-    <style>
-        
-    </style>
+    <script>
+        var p1 = window.document.getElementsByTagName('p') [0]
+        window.document.write('Está escrito assim: ' + p1.innerText)
+        p1.style.color = 'blue'
+    </script>
 </body>
 </html>
