@@ -1,36 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Outras formatacoes</title>
+    <title>Listas</title>
 </head>
 <body>
-    <h1>Outras formatacoes</h1>    
-    <h2>Codigo-fonte / Pre-formatacao</h2>
-    <p>Para exibir o codigo-fonte de um programa, ou para exibir um texto pre-formatado, podemos usar a tag <code>&lt;pre&gt;</code>.</p>
-    <pre> <!-- Considera os espacamentos tambem -->
-        <code>
-            &lt;html&gt;
-                &lt;head&gt;
-                    &lt;title&gt;Titulo&lt;/title&gt;
-                &lt;/head&gt;
-                &lt;body&gt;
-                    &lt;h1&gt;Titulo&lt;/h1&gt;
-                    &lt;p&gt;Paragrafo&lt;/p&gt;
-                &lt;/body&gt;
-            &lt;/html&gt;
-        </code>
-    </pre>
-    <h2>Citacoes simples</h2>
-    <p>Exemplo de frase com uma <q>citacao simples</q></p>
-    <h2>Citacoes completas</h2>
-    <p>Segundo Jeff Noble, no seu livro HTML para Leigos:</p>
-    <blockquote>
-        <p>HTML e uma linguagem de marcacao que permite aos usuarios criar paginas na Internet com textos, imagens, sons, videos, etc.</p>
-    </blockquote>
-    <h2>Abreviacoes</h2>
-    <p>HTML significa <abbr title="HyperText Markup Language">HTML</abbr></p>
-    <p>CSS significa <abbr title="Cascading Style Sheets">CSS</abbr></p>
+    <h1>Listas Ordenadas</h1>
+    <ol type="1" start="5">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+    <h1>Listas Não Ordenadas</h1>
+    <ul type="circle"> <!-- square, disc -->
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <h2>Juntando listas</h2>
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3
+            <ul>
+                <li>Item 3.1</li>
+                <li>Item 3.2</li>
+                <li>Item 3.3</li>
+            </ul>
+        </li>
+        <li>Item 4</li>
+    </ol>
+    <h2>Lista de definicoes</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação de hipertexto</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de estilo de folha de estilo</dd>
+    </dl>
 </body>
 </html>
